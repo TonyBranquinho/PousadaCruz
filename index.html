@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusada Cruz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="nav-principal">            
+            <a href="index.html" class="logo-pousada">
+                <img src="imagens/logoRecortada.png" alt="logo-pousada">
+            </a>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#acomodacoes">Acomodações</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Bem-vindo a Pousada Cruz</h1>
+            <h2>Seu Refúgio a Beira-Mar</h2>
+        </div>        
+    </header> 
+
+
+    <section id="one1">
+        <article class="primeiro">
+            <h1>Aproveite a TV.</h1>
+            <p>Assista em Smart TVs, Playstation, Xbox, Chromecast, Apple TV, aparelhos Blu-ray e outros dispositivos.</p>
+        </article>
+         
+        <article class="segundo">
+            <img src="Imagens/3.jpg">
+        </article>            
+    </section>
+
+    <section id="two">
+        <article class="quarto">
+            <img src="Imagens/4.jpg">
+        </article>
+
+        <article class="terceiro">
+            <h1>Assista onde quiser.</h1>
+            <p>Assista a quantos filmes e series quiser no celular, tablet, laptop e TV</p>
+        </article>        
+    </section>
+
+    <section class="tree">
+        <article class="quinto">
+            <h1>Crie perfis para crianças</h1>
+            <p>Deixe as crianças se aventurarem com os seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+        </article>
+
+        <article class="sexto">
+            <img src="Imagens/5.jpg">
+        </article>
+    </section>
+
+    <section id="four">
+        <article class="setimo">
+            <img src="Imagens/6.jpg">
+        </article>
+
+        <article class="oitavo">
+            <h1>Baixe séries para assistir offline</h1>
+            <p>Assista em avião, trem ou submarino...</p>
+        </article>        
+    </section>
+
+    <script src="script.js"></script>
+    
+
+
+
+    <!-- essa parte faz a pagina carregar direto no seçao especifica -->
+    <script>
+        function scrollToSection() {
+        //const alvo = document.getElementById('four'); // SEÇAO ESPECIFICA "four"
+        if (alvo) {
+        alvo.scrollIntoView();
+    }
+    }
+
+    // Executa quando a página carrega normalmente
+    scrollToSection();
+
+    // Executa novamente sempre que o Live Server recarregar via WebSocket
+    if (location.hostname.includes("127.0.0.1") || location.hostname.includes("localhost")) {
+    setInterval(() => {
+        scrollToSection();
+    }, 200);
+    }
+    </script>
+    
+</body>
+</html>

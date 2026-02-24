@@ -1,66 +1,67 @@
 body {
     margin : 0;
+    padding: 0;
 }
  /* ============== FUNDO ========================== */
 header {
     background-image:
-     url(imagens/35.jpg);
-    border-bottom: 10px solid rgb(34, 48, 47);
+     url(imagens/101Tratada.png);
     background-size: cover; 
-    height: 750px;
-    display: block
+    height: 780px;
+    display: block;
+    /* border: 2px solid green;  */
+    
 }
 
 /* =============== nav-principal ================== */
 
 .nav-principal {
     display: flex;
-    align-items: flex-start;           /* alinhamento vertical */
-    justify-content: space-between; /* espaçamento horizontal */
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    height: 165px;
-    /* border: 5px solid red; */
-    padding-top: 30px;
+    height: 148px;
+    /* border: 5px solid rgb(230, 236, 113); */
 }
 
-.menu-esquerda {
-    display: inline-block;
-    margin-top: 0px;
-    /* border: 5px solid purple; */
-}
 .logo-pousada img {
-    display: inline-block;
-    /* width: 80px; */
-    /* height: 30px; */
-    margin-left: 70px;
+    display: block;
+    align-items: flex-start;
+    width: 140px;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 5px;
+    /* border: 5px solid red;    */
+    transition: all .3s ease-in-out;        
 } 
 
-
-
-.menu-direita {
+.nav-principal ul {
     display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-    margin-right: 80px;
-    width: 180px;
+    list-style: nome;
+    margin-right: 220px;
+    padding-top: 10px;
+    gap: 20px;
+    list-style-type: none;
     /* border: 5px solid orange; */
+    
 }
 
-
-
-.entrar a{
+.nav-principal ul a {
+    font-family: 'Arial', Courier, monospace;
+    font-weight: bold;
     text-decoration: none;
     color: white;
-    background-color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* background-color: rgb(61, 61, 246); */
     display: flex;
-    align-items: center; /* alinhamento vertical */
-    justify-content: center; /* alinhamento horizontal */
-    width: 60px;
+    width: auto;
     height: 25px;
     border-radius: 5px;
+    padding: 5px;
+    font-size: 22px;
+    /* border: 5px solid red; */
+    transition: all .3s ease-in-out;
 }
-
-
 
 
 /* ============= texto ===================== */
@@ -70,45 +71,110 @@ h1 {
     color: white;
     font-size: 4rem;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 0.7;    
+    padding: 0;
+    margin: 0;
+    overlay: rgba(0,0,0,0.35);
+    /* border: 5px solid red;           */
+}
+
+.linha-decorativa {
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #f4fc7e,
+    #e8d5a3,
+    #c8a96e,
+    transparent
+  );
+  margin: 8px auto 0 auto;
+  border: none;
 }
 
 h2 {
     font-family: 'Arial', Courier, monospace;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     color: white;
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 2;    
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ============== RODAPE HEROE ================= */
+#rodape-hero {
+    position: relative;
+    background-image:
+    url(imagens/background.png);
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
+    background-size: cover; 
+    height: 120px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    /* border: 2px solid green; */
 }
 
 
-
-
-
-
-
-
-/* ============== secao one ================= */
-
-#one1 {
+#rodape-hero ul {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    /* border: 2px solid rgb(19, 11, 231); */
+}
+#rodape-hero ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 380px;
-    padding-top: 0;
-    /* border: 2px solid green; */
-    border-bottom: 10px solid rgb(34, 48, 47);
+    width: 350px;
+    /* border: 2px solid rgb(206, 236, 95); */
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 59, 191);
+    margin: 0;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 6px;
+}
+
+
+
+
+
+
+
+
+
+#sobre {
+    background-image: 
+        linear-gradient(to bottom left, rgba(68,148,179,0.8), transparent 10%), 
+        url('imagens/background.png');
+        
+
+    background-size: 100% 100%, cover; /* O gradiente ocupa tudo, a imagem também */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
 }
 
 .primeiro {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: flex-end;
     width: 320px;
     height: 280px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 .primeiro h1 {
@@ -229,4 +295,16 @@ h2 {
 .oitavo p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ============== hover ================= */
+.logo-pousada img:hover {
+    transform: scale(1.1);
+}
+
+.nav-principal ul a:hover {
+    transform: scale(1.2);
+    background-color: #4494B3;
+    box-shadow: 0 6px 16px rgba(68,148,179,0.4);
 }

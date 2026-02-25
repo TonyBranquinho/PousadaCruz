@@ -37,7 +37,7 @@ header {
 .btn-whatsapp:hover {
     transform: scale(1.2); /* Efeito de aumento ao passar o mouse */
 }
-/* Definindo a animação de vibração */
+/* Definindo a animação de vibração  */
 @keyframes tremer {
     0% { transform: rotate(0deg); }
     5% { transform: rotate(10deg); }

@@ -29,10 +29,10 @@ header {
 /* ============== BOTAO ZAP ========================== */
 .btn-whatsapp {
     position: fixed;    
-    bottom: 20px;       
-    right: 20px;        
-    width: 100px;        
-    height: 100px;       
+    bottom: 2rem;       
+    right: 2rem;        
+    width: 10rem;        
+    height: 10rem;       
     z-index: 1000;      /* Garante que ele fique sobre todos os outros elementos */
 
     /* Configurações para o surgimento suave */
@@ -77,24 +77,22 @@ header {
 /* =============== nav-principal ================== */
 .nav-principal {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 27rem;
+    justify-content: center;
+    align-items: center;
     /* border: 5px solid rgb(230, 236, 113); */
 }
 .logo-pousada img {
     display: block;
     align-items: flex-start;
-    width: 170px;
+    width: 17rem;
     height: auto;
-    margin-left: 150px;
+    margin-right: 55rem;
     /* border: 5px solid red;    */
     transition: all .3s ease-in-out;        
 }
 .nav-principal ul {
     display: flex;
     list-style: nome;
-    margin-right: 22rem;
     padding-top: 1rem;
     gap: 1rem;
     list-style-type: none;
@@ -136,21 +134,20 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: .5rem .5rem;    
+    padding: .5rem .5rem;
+    margin: auto;
+    margin-top: 19rem;    
     
     background: radial-gradient(
         circle, 
         rgba(0, 0, 0, 0.6) 0%, 
         rgba(0, 0, 0, 0.3) 40%, 
         transparent 80%
-    );    
-    
+    ); 
     backdrop-filter: blur(4px); 
     -webkit-backdrop-filter: blur(4px);
 
-    margin: -9rem auto;
     width: fit-content;
-    /* border: 5px solid rgb(230, 236, 113); */
 }
 
 /* ============= HERO texto ===================== */
@@ -246,7 +243,7 @@ p {
 }
 .primeiro {
     flex: 1; /* Ocupa o espaço proporcional */
-    max-width: 500px;
+    max-width: 50rem;
     transition: all .3s ease-in-out;
 }
 h3 {
@@ -285,7 +282,7 @@ h3 {
 /* O Card da Direita */
 .segundo {
     flex: 1;
-    max-width: 450px;
+    max-width: 45rem;
     margin-left: -10px; /* ISSO cria o efeito de sobreposição da imagem */
     z-index: 10;
     transition: all .3s ease-in-out;
@@ -306,14 +303,15 @@ h3 {
     line-height: 1.4;
 }
 
+
 /* ============== ACOMODAÇOES ================= */
 #acomodacoes {
     background-image: url('imagens/background.png');
     background-color: rgba(220, 223, 41, 0.1);
     background-blend-mode: multiply;
     background-size: cover;
-    padding: 30px;
-    padding-bottom: 50px;
+    padding: 3rem;
+    padding-bottom: 5rem;
 }
 .linha-decorativa3 {
     width: 50%;
@@ -342,17 +340,17 @@ h3 {
     /* border: 5px solid red; */
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
     
 }
 .quartos {    
     box-shadow:  0 4px 8px black;
-    margin-top: 20px;
-    margin-bottom: 20px;     
+    margin-top: 2rem;
+    margin-bottom: 2rem;     
     max-width: 1050px;
     /* border: 5px solid red; */
-    width: 400px;
-    height: 200px;
+    width: 40rem;
+    height: 20rem;
     transition: all .3s ease-in-out;
 }
 .quartos p {
@@ -362,6 +360,7 @@ h3 {
     width: 100%;
     height: 100%;
 }
+
 
 /* ============== GALERIA ================= */
 #galeria {
@@ -402,8 +401,8 @@ h3 {
     margin-bottom: 30px;
 }
 .galeria-foto {
-    width: 500px;
-    height: 450px;
+    width: 50rem;
+    height: 45rem;
     overflow: hidden;
     transition: all .3s ease-in-out;
 }
@@ -552,13 +551,51 @@ iframe {
 
 }
 
+@media (max-width: 1024px) {
+:root {
+    font-size: 50%;
+}
+header {
+    background-position: 90% center;
+    /* border: 5px solid red; */
+}
+.btn-whatsapp {
+    right: 11rem;
+}
+.hero-content {
+    margin-top: 25rem;
+}
+.logo-pousada img {
+    margin-right: 5rem;
+    /* border: 5px solid red;    */
+    transition: all .3s ease-in-out;        
+}
+/*  */
+.acomodacoes-fotos {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+}
+/*  */
+.galeria-foto {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+iframe {
+    width: 100rem;
+    height: 50rem;    
+}
+}
+
 @media (max-width: 768px) {
-    header {
-        background-position: 80% center;
-    }
     :root {
     font-size: 50%;
-    }    
+    }
+    header {
+        background-position: 80% center;
+    }        
     .nav-principal {
         align-items: center;
         /* border: 5px solid rgb(88, 92, 21); :    */
@@ -582,8 +619,7 @@ iframe {
     h1 {
         font-size: 6rem;        
     }
-
-/* ===== rodape-hero ==== */
+/* == rodape-hero == */
     #rodape-hero ul {
         width: 90%;
         
@@ -600,21 +636,82 @@ iframe {
         width: 12rem;
         height: auto;
     }
-
-
-/* ===== localizacao ===== */
+/* == localizacao == */
 iframe {
     width: 600px;
     height: 500px;    
 }
-
-
-/* ======== contato ====== */
+/* == contato == */
 #contato {
     justify-content:flex-start
 }
 .redes {
     margin-left: -2rem;
 }
+}
 
+@media (max-width: 480px) {
+:root {
+    font-size: 50%;
+}
+.btn-whatsapp {
+    right: 2rem;
+}
+.hero-content {
+    /* border: 5px solid red; */
+    margin-top: 19rem;   
+}
+.nav-principal ul {
+    display: none;
+        /* align-items: center; */
+        /* border: 5px solid rgb(88, 92, 21); :    */
+}
+#rodape-hero ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    /* border: 2px solid rgb(19, 11, 231); */
+}
+#rodape-hero ul li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: all .3s ease-in-out;
+    /* border: 2px solid rgb(206, 236, 95); */
+}
+.rodape-heroe-div {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+iframe {
+    width: 52rem;
+    height: 50rem;    
+}
+#contato .logo-pousada img {
+    display: none; 
+}
+.redes img {
+    padding-right: 1rem;
+    width: 6rem;
+    height: auto;
+}
+address {
+    font-size: 2rem;
+    margin-left: 1rem;
+    /* border: 2px solid green; */
+}
+.redes { 
+    margin-left: 2rem;   
+    width: 14rem;
+    height: auto;
+    
+    /* border: 2px solid rgb(26, 189, 26); */
+}
 }

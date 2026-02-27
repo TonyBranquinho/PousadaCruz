@@ -274,7 +274,7 @@ h3 {
 
 .container-foto-fundo img {
     width: 100%;
-    height: 250px;
+    height: auto;
     object-fit: cover; /* Faz a imagem preencher o espaço sem deformar */
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -289,7 +289,7 @@ h3 {
 }
 .card-polaroid {
     background: white;
-    padding: 15px;
+    padding: 1rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.6); /* Sombra para dar profundidade */
 }
 .card-polaroid img {
@@ -297,7 +297,7 @@ h3 {
     display: block;
 }
 .texto-card {
-    padding: 20px 5px;
+    padding: 1.5rem .5rem;
     font-family: Arial, sans-serif;
     font-size: 0.9rem;
     line-height: 1.4;
@@ -395,10 +395,11 @@ h3 {
     justify-content: center;
     
     margin-top: 10px;    
-    width: 63%;
+    width: 88%;
     gap: 10px;
     padding: 10px;
     margin-bottom: 30px;
+    /* border: 2px solid green; */
 }
 .galeria-foto {
     width: 50rem;
@@ -443,8 +444,8 @@ h3 {
     border: none;
 }
 iframe {
-    width: 150rem;
-    height: 75rem;    
+    width: 90vw;
+    height: 70vh;    
 }
 
 /* ============== FOOTER ================= */
@@ -454,7 +455,7 @@ iframe {
     background-blend-mode: multiply;
     background-size: cover;
     padding-top: 1rem;
-    height: 15rem;
+    height: auto;
 
     display: flex;
     flex-direction: row;
@@ -526,7 +527,7 @@ address a {
     transform: scale(1.2);
 }
 .galeria-foto:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 address:hover {
    transform: scale(1.1); 
@@ -544,10 +545,24 @@ address:hover {
 /* ============== QUERY ================= */
 
 @media (max-width: 1280px) {
-iframe {
+header {
+    background-position: 90% center;
+    /* border: 5px solid red; */
+}
+.galeria-foto {
+width: 90%;
+height: auto;
+}
+.logo-pousada img {
+    margin-right: 10rem;
+    /* border: 5px solid red;    */
+}
+
+    iframe {
     width: 100rem;
     height: 50rem;    
 }
+
 
 }
 
@@ -578,10 +593,8 @@ header {
 }
 /*  */
 .galeria-foto {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    transition: all .3s ease-in-out;
+width: 90%;
+height: auto;
 }
 iframe {
     width: 100rem;
@@ -590,58 +603,71 @@ iframe {
 }
 
 @media (max-width: 768px) {
-    :root {
-    font-size: 50%;
-    }
-    header {
-        background-position: 80% center;
-    }        
-    .nav-principal {
-        align-items: center;
-        /* border: 5px solid rgb(88, 92, 21); :    */
-    }
-    .logo-pousada img {
-        margin: 2rem;
-        padding-right: 0;         
-        width: 17rem; 
-        /* border: 5px solid rgb(230, 236, 113);           */
-    }
-    .nav-principal ul {
-        margin-right: 2rem;        
-        padding: 0;
-        justify-content: center;
-        gap: 10px;
-        /* border: 5px solid rgb(230, 236, 113); */
-    }    
-    .nav-principal ul a {
-        font-size: 2rem;        
-    }
-    h1 {
-        font-size: 6rem;        
-    }
+:root {
+font-size: 50%;
+}
+header {
+    background-position: 80% center;
+}        
+.nav-principal {
+    align-items: center;
+    /* border: 5px solid rgb(88, 92, 21); :    */
+}
+.logo-pousada img {
+    margin: 2rem;
+    padding-right: 0;         
+    width: 17rem; 
+    /* border: 5px solid rgb(230, 236, 113);           */
+}
+.nav-principal ul {
+    margin-right: 2rem;        
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+    /* border: 5px solid rgb(230, 236, 113); */
+}    
+.nav-principal ul a {
+    font-size: 2rem;        
+}
+h1 {
+    font-size: 6rem;        
+}
 /* == rodape-hero == */
-    #rodape-hero ul {
-        width: 90%;
-        
-        /* border: 2px solid rgb(19, 11, 231); */
-    }
-    #rodape-hero ul li {
-        flex-grow: 1;    
-        object-fit: cover;
-        /* border: 2px solid rgb(133, 131, 187); */
+#rodape-hero ul {
+    width: 90%;
     
-    }
-    #rodape-hero img {
-        /* padding-right: -4rem; */
-        width: 12rem;
-        height: auto;
-    }
-/* == localizacao == */
+    /* border: 2px solid rgb(19, 11, 231); */
+}
+#rodape-hero ul li {
+    flex-grow: 1;    
+    object-fit: cover;
+    /* border: 2px solid rgb(133, 131, 187); */
+
+}
+#rodape-hero img {
+    /* padding-right: -4rem; */
+    width: 12rem;
+    height: auto;
+}
+
+.galeria-section {   
+width: 90%;
+/* border: 2px solid green; */
+}
+.galeria-foto {
+width: 90%;
+height: auto;
+}
+.galeria-foto:hover {
+    display: none;
+}
+
+
 iframe {
     width: 600px;
     height: 500px;    
 }
-/* == contato == */
+
 #contato {
     justify-content:flex-start
 }
@@ -690,9 +716,26 @@ iframe {
     align-items: center;
     text-align: center;
 }
+#sobre {
+    display: flex;
+    flex-direction: column    
+}
+.galeria-foto:hover {
+    display: none;
+}
+.primeiro:hover {
+    display: none;;
+}
 iframe {
     width: 45rem;
     height: 40rem;    
+}
+
+
+
+#contato {
+    display: flex;
+    flex-direction: column;
 }
 #contato .logo-pousada img {
     display: none; 
@@ -706,12 +749,5 @@ address {
     font-size: 2rem;
     margin-left: 1rem;
     /* border: 2px solid green; */
-}
-.redes { 
-    margin-left: 2rem;   
-    width: 14rem;
-    height: auto;
-    
-    /* border: 2px solid rgb(26, 189, 26); */
 }
 }

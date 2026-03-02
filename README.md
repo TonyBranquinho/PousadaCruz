@@ -1,6 +1,8 @@
 https://tonybranquinho.github.io/PousadaCruz/
 
 # 🌊 Pousada Cruz — Website Institucional (Projeto Comercial)
+👉 https://tonybranquinho.github.io/PousadaCruz/  
+👉 https://PousadaCruz.com.br/
 
 Website institucional desenvolvido sob demanda para o **Hotel Pousada Cruz**, localizada na Praia do Ervino, em São Francisco do Sul (SC).
 
